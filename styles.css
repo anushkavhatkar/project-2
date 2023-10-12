@@ -60,6 +60,28 @@ body {
 
 
 
+    /*CTA*/
+
+#landing-page-cta {
+    background-color: var(--wheat);
+    padding: 0.5em 1em;
+    border-radius: .5em;
+    margin-top: .75em;
+    /* border: var(--emoji-yellow) 1px solid ; */
+}
+
+#landing-page-cta:hover {
+    background-color: var(--emoji-yellow);
+    cursor: pointer;
+
+    transition-duration: 1s;
+	transition-property: background-color;
+	transition-timing-function: linear;
+	will-change: transform;
+}
+
+
+
     /*LANDING PAGE*/
 
 #index-nav-bar {
