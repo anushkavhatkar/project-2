@@ -60,3 +60,10 @@ body {
 
 
 
+    /*LANDING PAGE*/
+
+#index-nav-bar {
+    display: flex;
+    padding: 1.5em;
+}
+
