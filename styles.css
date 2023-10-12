@@ -29,3 +29,34 @@ body {
     font-family: DMSans-Italic-Variable;
     src: url(/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf);
 }
+
+    /*TYPE HIERARCHY*/
+
+.large-title { 
+    font-family: DMSans-Variable;
+    font-weight: 700;
+    font-size: 64px;
+    
+}
+
+.body-text {
+    font-family: DMSans-Variable;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--dark-grey);
+}
+
+.cta-text {
+    font-family: DMSans-Variable;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.span-semibold {
+    font-family: DMSans-Variable;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
