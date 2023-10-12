@@ -24,6 +24,9 @@ body, html {
 }
 
 #background {
+    height: 100%;
+    width: 100vw;
+    position: relative;
     background: linear-gradient(#6495ED, #CCDBF6);
     z-index: 0;
     background-attachment: fixed; /* This will make your background fixed during scroll */
@@ -161,7 +164,7 @@ body, html {
 
 .card-image { 
     height: 20vw;
-    background-color: red;
+    background-size: cover;
 }
 
 #emoji-bar { 
