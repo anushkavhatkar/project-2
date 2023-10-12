@@ -1,0 +1,17 @@
+:root {
+    --cornflower: #6495ED;
+    --light-grey: #CCDBF6;
+    --light-yellow: #F8EBA6;
+    --dark-grey: #252525;
+    --wheat: #F8EBA6;
+    --emoji-yellow: #FFCD15;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+body {
+    background: linear-gradient(#6495ED, #CCDBF6);
