@@ -7,7 +7,7 @@
     --emoji-yellow: #FFCD15;
 }
 
-body, html {
+/* body, html {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -15,7 +15,22 @@ body, html {
 
 body {
     background: linear-gradient(#6495ED, #CCDBF6);
+} */
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
+
+#background {
+    background: linear-gradient(#6495ED, #CCDBF6);
+    z-index: 0;
+    background-attachment: fixed; /* This will make your background fixed during scroll */
+    background-size: cover; /* This will ensure it spans the entire viewport/content */
+    background-repeat: no-repeat; /* This prevents the background from repeating */
+}
+
 
 
     /*FONTS*/
@@ -141,7 +156,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    max-width: 20vw;
+    width: 20vw;
 }
 
 .card-image { 
@@ -149,3 +164,8 @@ body {
     background-color: red;
 }
 
+#emoji-bar { 
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+}

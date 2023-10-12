@@ -1,3 +1,6 @@
+let container = document.getElementById("cards");
+
+
 let images = [
     {
       "number": 1,
@@ -145,4 +148,69 @@ let images = [
     }
   ];
 
-  
+function createCards() {
+
+for (i=0; i<10; i++) {
+
+
+  // 1. Create the parent card container.
+let card = document.createElement('div');
+
+
+let randomX = Math.floor(Math.random() * (window.innerWidth - (window.innerWidth * 0.2)));
+
+let randomY = Math.floor(Math.random()*(window.innerHeight*2));
+
+    card.style.position = "absolute";
+    card.style.left = randomX + "px";
+    card.style.top = randomY + "px";
+
+card.className = 'wishlist-card';
+
+
+// 2. Create the child elements.
+
+let cardAge = document.createElement('div');
+let cardImage = document.createElement('div');
+let itemTitle = document.createElement('div');
+let itemPrice = document.createElement('div');
+
+
+
+// 3. Set the content and class names for the child elements.
+
+
+
+cardAge.className = 'card-age';
+cardAge.textContent = images[i].age;  // This can be dynamic, for example: `${days} DAYS OLD`
+
+cardImage.className = 'card-image';
+cardImage.style.backgroundImage = `url(${i}.jpeg)`;
+
+// Optionally, if you want to add an image inside the cardImage div:
+// cardImage.style.backgroundImage = "url('path_to_your_image.jpg')";
+
+itemTitle.className = 'item-title';
+itemTitle.textContent = images[i].item; // This can be dynamic
+
+itemPrice.className = 'item-price';
+itemPrice.textContent = images[i].price;  // This can be dynamic
+
+
+// 4. Append the child elements to the parent card container.
+
+card.appendChild(cardAge);
+card.appendChild(cardImage);
+card.appendChild(itemTitle);
+card.appendChild(itemPrice);
+
+
+document.getElementById('cards').appendChild(card);
+
+}
+
+
+
+};
+
+createCards();
